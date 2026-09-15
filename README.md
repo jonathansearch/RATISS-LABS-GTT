@@ -9,6 +9,8 @@
 
 ![RATISS Labs](docs/assets/logo-ratiss-labs.png)
 
+![Bannière GTT](docs/assets/banniere-gtt.png)
+
 ---
 
 ## 1. Présentation générale
@@ -78,13 +80,35 @@ Les dépôts historiques gelés sont décrits dans [`docs/ORPHELINS.md`](docs/OR
 
 ## 6. Protocole rouge/bleu et gouvernance de l’audit
 
+![Architecture en neuf couches](docs/assets/schema-architecture.svg)
+
+![Protocole rouge/bleu](docs/assets/schema-protocole.svg)
+
+![Boucle scellée R6-R7](docs/assets/schema-boucle-r6r7.svg)
+
 L’orchestrateur ne détient aucune autorité décisionnelle. Il tient un registre et coordonne les flux de vérification. L’équipe rouge applique le juge et publie les verdicts bruts. L’équipe bleue répond par des reproductions rejouables. Cette séparation permet de distinguer la production d’un résultat de l’évaluation de sa conformité.
 
 Les phases 2 à 7 ont été construites par l’équipe Rouge en relais, sur ordre explicite du chef de laboratoire, avec divulgation complète. La colonne « auditeur indépendant » de chaque reçu demeure **EN ATTENTE** conformément à la règle N2. Le rejeu externe s’effectue avec [`docs/AUDIT-INDEPENDANT-KIT.md`](docs/AUDIT-INDEPENDANT-KIT.md), tandis que le journal public des états d’audit est tenu dans [`docs/AUDIT_TRAIL.md`](docs/AUDIT_TRAIL.md).
 
 Cette organisation ne transforme pas un auto-audit en validation indépendante. Elle documente au contraire la séparation attendue et rend visible ce qui reste à vérifier.
 
-## 7. Installation et reproduction
+## 7. Run externe réel et visualisations
+
+![Run externe](docs/assets/graf-run-externe.svg)
+
+![Phase 4](docs/assets/graf-phase4.svg)
+
+![Mesures physiques et corrections aval](docs/assets/graphe-physique-valeurs-publiees.png)
+
+![Visualisation 3D topologique illustrative](docs/assets/graphe-3d-topologie-illustrative.png)
+
+![Atlas de cohérence illustratif](docs/assets/viz-atlas-illustratif.svg)
+
+![Topologie illustrative](docs/assets/viz-topologie-illustratif.svg)
+
+> La visualisation 3D est illustrative. Le graphe physique reprend exclusivement les valeurs déjà publiées dans les preuves du projet.
+
+## 8. Installation et reproduction
 
 Le dépôt exige Python **>=3.9**. L’installation minimale est la suivante :
 
@@ -108,7 +132,7 @@ python scripts/wm_externe_lewm.py    # reçu horodaté dans proofs/
 
 Les scripts de vérification sont conçus pour produire des sorties consultables. Les jetons d’accès sont fournis par variables d’environnement et ne sont jamais affichés par les modules d’intégration.
 
-## 8. Organisation du dépôt
+## 9. Organisation du dépôt
 
 ```text
 gtt/            les neuf couches, avec un cœur en bibliothèque standard seule
@@ -120,7 +144,7 @@ docs/           protocole, kit d’audit, journal public, certifications et cart
 gtt/audit/      PROVENANCE : source et commit de chaque ligne de code
 ```
 
-## 9. Intégrité, provenance et transparence
+## 10. Intégrité, provenance et transparence
 
 Aucune valeur n’est publiée sans reçu rejouable. Aucune publication n’intervient sans visa du chef de laboratoire conformément à la règle R3. Les certifications des phases 2 à 7 sont des auto-audits divulgués ; l’auditeur indépendant est en attente et son kit de reproduction est fourni.
 
@@ -130,19 +154,19 @@ Le bot Metaculus est désarmé par construction. Il fonctionne hors ligne, avec 
 
 La provenance intégrale est disponible dans `gtt/audit/PROVENANCE.md`. Le scan anti-copie de blocs de **11 lignes ou plus** contre les dépôts sources n’a identifié aucun bloc commun.
 
-## 10. Relation avec RATISS-Framework
+## 11. Relation avec RATISS-Framework
 
 [RATISS-Framework](https://github.com/jonathansearch/RATISS-Framework) constitue la couche de méthode et le juge de couche 1. Il audite RATISS-LABS-GTT par dépendance Git scellée en intégration continue. GTT apporte le terrain expérimental en neuf couches ; Framework fournit les mécanismes de scellement, de vérification et de décision.
 
 Cette relation est volontairement asymétrique : la couche 1 juge la couche 2. Les résultats GTT ne doivent donc pas être interprétés indépendamment des preuves et du verdict produits par Framework.
 
-## 11. Laboratoire et responsabilité scientifique
+## 12. Laboratoire et responsabilité scientifique
 
 **Jonathan Evina** est fondateur et chef de laboratoire de RATISS Labs, à Yaoundé, Cameroun. Il assure la vision, l’arbitrage et le visa conformément à la règle R3. Son identifiant ORCID est [0009-0000-4092-5313](https://orcid.org/0009-0000-4092-5313). Le compte GitHub de référence est [jonathansearch](https://github.com/jonathansearch). Le contact professionnel est `jonathan.ratisslabs@zohomail.com`.
 
 Les agents de construction et l’équipe Rouge sont documentés dans les artefacts de provenance. Le veto de l’auditeur prime sur le chef de laboratoire. Cette règle a permis de détecter la fabrication présente dans des artefacts internes en septembre 2026.
 
-## 12. Licence et citation
+## 13. Licence et citation
 
 Le projet est distribué sous licence MIT. Copyright (c) **2026 Jonathan Evina, RATISS Labs**. Le texte complet figure dans [`LICENSE`](LICENSE) et les informations de citation dans [`CITATION.cff`](CITATION.cff).
 
