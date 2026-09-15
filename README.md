@@ -102,6 +102,16 @@ Cette organisation ne transforme pas un auto-audit en validation indépendante. 
 
 ![Visualisation 3D topologique illustrative](docs/assets/graphe-3d-topologie-illustrative.png)
 
+### Trois visualisations 3D GTT
+
+![Cohérence topologique locale](docs/assets/graphe-3d-01-coherence-topologique.png)
+
+![Run externe LeWM / TwoRooms](docs/assets/graphe-3d-02-run-externe.png)
+
+![Architecture en neuf couches](docs/assets/graphe-3d-03-neuf-couches.png)
+
+> Ces visualisations sont destinées à la lecture et à l’explication des résultats. Les valeurs numériques du run externe proviennent exclusivement des mesures déjà publiées dans le dépôt.
+
 ![Atlas de cohérence illustratif](docs/assets/viz-atlas-illustratif.svg)
 
 ![Topologie illustrative](docs/assets/viz-topologie-illustratif.svg)
