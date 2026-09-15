@@ -96,7 +96,7 @@ def test_osf_dry_run_sans_fuite():
 
 
 def test_github_dry_run_sans_fuite():
-    r = github_sync.sync("brossbernard2-pixel/RATISS-LABS-GTT",
+    r = github_sync.sync("jonathansearch/RATISS-LABS-GTT",
                          {"GITHUB_TOKEN": "SECRET-GH"}, {"endpoint": "commits"})
     assert r["request"]["url"].endswith("/RATISS-LABS-GTT/commits")
     assert r["token"] == "***" and "SECRET-GH" not in str(r)

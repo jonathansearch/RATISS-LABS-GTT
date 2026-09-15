@@ -7,11 +7,11 @@ set -u
 BASE="${1:-/tmp/gtt-audit-independant}"
 rm -rf "$BASE"
 echo "== clone frais =="
-git clone -q https://github.com/brossbernard2-pixel/RATISS-LABS-GTT.git "$BASE" || { echo "ÉCHEC clone"; exit 1; }
+git clone -q https://github.com/jonathansearch/RATISS-LABS-GTT.git "$BASE" || { echo "ÉCHEC clone"; exit 1; }
 cd "$BASE" || exit 1
 SHA=$(git rev-parse HEAD); echo "commit rejoué : $SHA"
 echo "== installation =="
-pip install -q "ratiss-framework @ git+https://github.com/brossbernard2-pixel/RATISS-Framework.git" >/dev/null 2>&1
+pip install -q "ratiss-framework @ git+https://github.com/jonathansearch/RATISS-Framework.git" >/dev/null 2>&1
 pip install -q -e . >/dev/null 2>&1 || { echo "ÉCHEC install"; exit 1; }
 FAIL=0
 echo "== tests =="

@@ -25,8 +25,8 @@ remplir. Sortie attendue en fin : `FORMULAIRE PRÊT — à signer par l'auditeur
 ## 2. Vérifications manuelles (si vous préférez)
 
 ```bash
-git clone https://github.com/brossbernard2-pixel/RATISS-LABS-GTT.git && cd RATISS-LABS-GTT
-pip install "ratiss-framework @ git+https://github.com/brossbernard2-pixel/RATISS-Framework.git"
+git clone https://github.com/jonathansearch/RATISS-LABS-GTT.git && cd RATISS-LABS-GTT
+pip install "ratiss-framework @ git+https://github.com/jonathansearch/RATISS-Framework.git"
 pip install -e .
 python -m pytest -q                    # ATTENDU : 108 passed (102 + 6 gardiens hors-ligne du run externe)
 python -m gtt.judge --ci; echo $?      # ATTENDU : 0

@@ -16,7 +16,7 @@ jobs:
       - name: Install pytest
         run: pip install pytest
       - name: Install judge dependency (RATISS-Framework layer 1)
-        run: pip install "ratiss-framework @ git+https://github.com/brossbernard2-pixel/RATISS-Framework.git"
+        run: pip install "ratiss-framework @ git+https://github.com/jonathansearch/RATISS-Framework.git"
       - name: Install GTT
         run: pip install -e .
       - name: Tests
@@ -32,7 +32,7 @@ jobs:
       - name: Install pytest
         run: pip install pytest
       - name: Install judge dependency (RATISS-Framework layer 1)
-        run: pip install "ratiss-framework @ git+https://github.com/brossbernard2-pixel/RATISS-Framework.git"
+        run: pip install "ratiss-framework @ git+https://github.com/jonathansearch/RATISS-Framework.git"
       - name: Install GTT
         run: pip install -e .
       - name: Judge manifests
