@@ -1,6 +1,6 @@
 # CERTIFICATION COMPACTE — GTT : PREMIER RUN EXTERNE RÉEL + CLÔTURE v1 (côté construction)
 
-**Dépôt** : github.com/jonathansearch/RATISS-LABS-GTT
+**Dépôt** : github.com/brossbernard2-pixel/RATISS-LABS-GTT
 **HEAD certifié** : `8266ed6` (25 commits) · **CI** : success
 **Date** : 2026-09-13 · **Constructeur/exécuteur** : Rouge en relais
 (ordre du chef « pleine puissance », renouvelé ce jour). **Auditeur
